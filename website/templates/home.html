@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Home</title>
+    </head>
+
+    <body>
+        <h1>Carly's Technical Blog 👩🏼‍💻</h1>
+        <P>Ranking the top programming tools </P>
+
+        <form method="post">
+            <input type="text" name="item">
+            <input type="submit" value="add">
+
+        </form>
+
+        <ul>
+
+            {% for post in posts %}
+                <li>{{ post.data }}<a href="/remove/{{ post.id }}"> remove </a></li>
+            {% endfor %}
+
+        </ul>
+
+    </body>
+</html>
+
+
+</DOCTYPE>
